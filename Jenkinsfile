@@ -1,6 +1,12 @@
 node {
     def app
-    
+
+    stage('Debug User') {
+         sh 'whoami'
+         sh 'id'
+         sh 'groups'     
+    }
+
     stage('Clone repository') {      
 
         checkout scm
