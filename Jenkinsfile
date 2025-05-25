@@ -1,13 +1,5 @@
 node {
     def app
-
-    stage('Debug User') {
-      steps {
-          sh 'whoami'
-          sh 'id'
-         sh 'groups'
-      }
-    }
     
     stage('Clone repository') {      
 
